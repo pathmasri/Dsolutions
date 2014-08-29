@@ -8,7 +8,7 @@
 <h1> Welcome to D solutions</h1>
 
 <body>
-	<form action="hello.htm">
+	<form action="submitjob">
 
 		<table>
 			<tr>

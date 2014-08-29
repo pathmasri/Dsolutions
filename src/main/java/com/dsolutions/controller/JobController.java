@@ -22,6 +22,13 @@ public class JobController {
 	@Autowired
 	JobService jobService;
 	
+	@RequestMapping("/test")  
+    public ModelAndView showMessage() {  
+        System.out.println("from controller");  
+        return new ModelAndView("hello", "message", "test");  
+       
+    } 
+	
 	@RequestMapping("form")
 	 public ModelAndView getForm(@ModelAttribute Job Job) {
 	  return new ModelAndView("form");

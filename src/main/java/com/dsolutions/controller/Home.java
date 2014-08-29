@@ -7,7 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller  
 public class Home {  
   
-    @RequestMapping("/hello")  
+    @RequestMapping("/submitjob")  
     public ModelAndView showMessage() {  
         System.out.println("from controller");  
         return new ModelAndView("hello", "message", "test");  
