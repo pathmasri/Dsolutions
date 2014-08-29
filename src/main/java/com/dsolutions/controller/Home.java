@@ -6,11 +6,11 @@ import org.springframework.web.servlet.ModelAndView;
   
 @Controller  
 public class Home {  
-    String message = "Welcome to your 1st Maven Spring project !";  
   
     @RequestMapping("/hello")  
     public ModelAndView showMessage() {  
         System.out.println("from controller");  
-        return new ModelAndView("hello", "message", message);  
+        return new ModelAndView("hello", "message", "test");  
+       
     }  
 }  
