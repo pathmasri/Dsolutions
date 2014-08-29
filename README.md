@@ -26,9 +26,18 @@ Build instructions.
    
    <role rolename="manager-script"/>
    <user password="manager" roles="manager-script" username="manager"/>
+ 
+3. Add below fields in database.properties file accordingly.
 
-2. Start tomecat server
-3. run below targets
+database.driver=com.mysql.jdbc.Driver
+database.url=jdbc:mysql://localhost:3306/dsolutions
+database.user=root
+database.password=password1234
+dialect=org.hibernate.dialect.MySQLDialect  
+
+4. Start tomecat server
+
+5. run below targets
      mvn clean
      mvn package
      mvn tomcat7:deploy

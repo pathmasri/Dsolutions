@@ -25,7 +25,7 @@ public class JobController {
 	 @RequestMapping("/submitjob") 
     public ModelAndView showMessage() {  
         System.out.println("from controller");  
-        return new ModelAndView("hello", "message", "test");  
+        return new ModelAndView("result", "message", "test");  
        
     } 
 	
