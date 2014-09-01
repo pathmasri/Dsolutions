@@ -10,6 +10,7 @@ public class Job {
 	
 	@Id  
 	@GeneratedValue
+	@Column(name = "job_id")  
 	private int jobId;
 	@Column(name = "first_name")  
 	private String firstName;

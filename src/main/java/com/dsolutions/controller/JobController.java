@@ -23,8 +23,9 @@ public class JobController {
 	JobService jobService;
 	
 	 @RequestMapping("/submitjob") 
-    public ModelAndView showMessage() {  
-        System.out.println("from controller");  
+    public ModelAndView submitJob(@ModelAttribute Job Job) {  
+        System.out.println("submit job called");  
+        jobService.insertRow(Job);
         return new ModelAndView("result", "message", "test");  
        
     } 
