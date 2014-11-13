@@ -4,6 +4,8 @@
  */
 package com.dsolutions.model;
 
+import java.util.Collection;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,6 +14,7 @@ import javax.persistence.JoinTable;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.JoinColumn;
+
 
 @Entity
 @Table(name="users")
@@ -31,6 +34,7 @@ public class User {
 		inverseJoinColumns = {@JoinColumn(name="role_id", referencedColumnName="id")}
 	)
 	private Role role;
+
 
 	public Integer getId() {
 		return id;
